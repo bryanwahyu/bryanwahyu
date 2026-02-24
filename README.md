@@ -14,7 +14,7 @@ I build backend systems from scratch — game servers, security automation tools
 
 🔒 **Security Automation** — DevSecOps tooling with Trivy, Nuclei, Gitleaks, ZAP — orchestrated scanning pipelines in Go
 
-♿ **Accessibility Tech** — Building <a href="https://disabilitasku.id">disabilitasku.id</a>, a platform for people with disabilities in Indonesia, powered by AI
+♿ **Accessibility Tech** — Building [disabilitasku.id](https://disabilitasku.id), a platform for people with disabilities in Indonesia, powered by AI
 
 ---
 
@@ -49,6 +49,11 @@ Patterns     DDD · CQRS · Circuit Breaker · SAGA · Event Sourcing
 
 ---
 
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=bryanwahyu&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true">
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=bryanwahyu&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/bryan-wahyu-2b0360377/">LinkedIn</a> · 
+  <a href="https://disabilitasku.id">disabilitasku.id</a>
 </p>
