@@ -20,13 +20,13 @@ I build backend systems from scratch — game servers, security automation tools
 
 ### Tech Stack
 
-\`\`\`
-Languages    Go · TypeScript/Node.js · PHP
-Infra        Docker · AWS (ECR, ECS) · Kubernetes · CI/CD (GameCI, GitHub Actions)
+```
+Languages    Go · TypeScript/Node.js · Python · PHP
+Infra        Docker · AWS (ECR, ECS) · Kubernetes · NATS JetStream · CI/CD (GameCI, GitHub Actions)
 Data         PostgreSQL · Redis · Cassandra/ScyllaDB · MySQL
 Game         Nakama · WebSocket · Unity (client integration)
 Patterns     DDD · CQRS · Circuit Breaker · SAGA · Event Sourcing
-\`\`\`
+```
 
 ---
 
@@ -34,9 +34,16 @@ Patterns     DDD · CQRS · Circuit Breaker · SAGA · Event Sourcing
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| **js-data-entry** | DDD-architected data ingestion service with clean layer separation | Node.js, Cassandra, Docker |
-| **app_disabilitas_mata_ai** | AI-powered accessibility app for visually impaired users | AI, Mobile |
-| **automaton-sec** | Security scanning orchestrator — Trivy, Nuclei, Gitleaks, ZAP | Go, Docker |
+| [**automaton-sec**](https://github.com/bryanwahyu/automaton-sec) | Security scanning platform: Trivy, Nuclei, Gitleaks, ZAP, SQLMap, plus AI analysis of findings | Go, gRPC, Docker |
+| [**mini-siem-api**](https://github.com/bryanwahyu/mini-siem-api) | Threat detection engine for brute force, SQLi and XSS, with automatic firewall blocking | Go |
+| [**worker-siem**](https://github.com/bryanwahyu/worker-siem) | Log-shipping worker for mini-siem-api: tails logs, normalizes events, at-least-once delivery through a persistent spool | Go |
+| [**emailblast**](https://github.com/bryanwahyu/emailblast) | Resumable bulk email sender with a bounded worker pool, rate limiting, retry and checkpoint resume. Benchmarked at 1M recipients | Go, SMTP, SES |
+| [**flip-style-transfer-engine**](https://github.com/bryanwahyu/flip-style-transfer-engine) | Idempotent interbank transfer service: SAGA orchestration, double-entry ledger, transactional outbox, circuit breaker | Go, PostgreSQL, NATS JetStream, Redis |
+| [**wealth-advisor**](https://github.com/bryanwahyu/wealth-advisor) | Multi-agent wealth advisor: anomaly detection, prioritized recommendations, human review, long-term memory | Python, SQLite/ScyllaDB |
+| [**js-data-entry**](https://github.com/bryanwahyu/js-data-entry) | DDD-architected data ingestion service with clean layer separation | Node.js, Cassandra, Docker |
+| [**app_disabilitas_isyarat_ai**](https://github.com/bryanwahyu/app_disabilitas_isyarat_ai) | Sign language recognition (BISINDO/SIBI) for deaf users | Python, MediaPipe, TensorFlow |
+| [**app_disabilitas_mata_ai**](https://github.com/bryanwahyu/app_disabilitas_mata_ai) | AI-powered accessibility app for visually impaired users | AI, Mobile |
+| [**tap-to-talk**](https://github.com/bryanwahyu/tap-to-talk) | Free, offline-capable tap-to-talk board for non-verbal people | TypeScript |
 
 ---
 
