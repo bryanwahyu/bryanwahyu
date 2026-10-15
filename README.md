@@ -61,6 +61,6 @@ Patterns     DDD · CQRS · Circuit Breaker · SAGA · Event Sourcing
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/bryan-wahyu-2b0360377/">LinkedIn</a> · 
+  <a href="https://www.linkedin.com/in/bryan-wahyu-krishnaputra/">LinkedIn</a> · 
   <a href="https://disabilitasku.id">disabilitasku.id</a>
 </p>
